@@ -62,13 +62,24 @@ class Cep extends Component {
   render() {
     return (
       <div className='pageCep-container'>
-        <p>Consultar</p>
-      <div className='pageCep-container-search'>
-       <p>{this.state.error}</p>
-       <Search placeholder='00000-000' value={this.state.cep} method={this.searchCep} onclick={this.getCep}/> 
-      </div>
-      {this.state.address ? <Result {...this.state.address} method={this.closeCep}/> : null }
-        
+        <div className='pageCep-container-searchCep'>
+          <p className='pageCep-text'>CONSULTAR</p>
+          <p className='pageCep-text-err'>{this.state.error}</p>
+          <Search placeholder='00000-000' value={this.state.cep} method={this.searchCep} onclick={this.getCep}/> 
+          {this.state.address ? <Result {...this.state.address} method={this.closeCep}/> : null }
+        </div>
+        <div className='pageCep-color'>
+          <span className='yellow'></span>
+          <span className='orange'></span>
+          <span className='red'></span>
+          <span className='rose'></span>
+          <span className='purple'></span>
+          <span className='deep-purple'></span>
+          <span className='blue'></span>
+          <span className='cyan'></span>
+          <span className='light-green'></span>
+          <span className='green'></span>
+        </div>
       </div>
     );
   }
