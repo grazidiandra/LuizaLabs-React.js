@@ -1,5 +1,7 @@
 .result-container {
+  border-top: 1px solid rgba(255,255,255, .5);
   margin-top: 30px;
+  padding-top: 10px;
   width: 420px;
 }
 
@@ -18,7 +20,7 @@
   font-size: 18px;
   height: 20px;
   outline: none;
-  opacity: 0.5;
+  opacity: 0.8;
   width: 20px;
 }
 
