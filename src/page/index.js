@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Search from '../component/search';
-import axios from 'axios';
-import jsonpAdapter from 'axios-jsonp';
+import apiAxios from '../service/api'
 import './style.css'
 import Result from '../component/result';
 import LuizaLabs from '../component/luizalabsStyle';
@@ -33,11 +32,7 @@ class Cep extends Component {
         error: 'Preencha o campo de CEP '
       })
     } else {
-      axios({
-        url: `https://viacep.com.br/ws/${this.state.cep}/json/?callback=address`,
-        adapter: jsonpAdapter,
-        callbackParamName: 'address'
-      })
+      apiAxios.get(`${this.state.cep}/json/?callback=address`)
       .then(response => {
         if(response.data.erro) {
           this.setState({ 
