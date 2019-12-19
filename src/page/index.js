@@ -4,6 +4,7 @@ import axios from 'axios';
 import jsonpAdapter from 'axios-jsonp';
 import './style.css'
 import Result from '../component/result';
+import LuizaLabs from '../component/luizalabsStyle';
 
 class Cep extends Component {
   constructor(props) {
@@ -46,7 +47,7 @@ class Cep extends Component {
             address: response.data })
         }
       })
-      .catch(err => {
+      .catch(() => {
         this.setState({ error: 'Preencha com um CEP válido' });
       })
     }
@@ -68,18 +69,7 @@ class Cep extends Component {
           <Search placeholder='00000-000' value={this.state.cep} method={this.searchCep} onclick={this.getCep}/> 
           {this.state.address ? <Result {...this.state.address} method={this.closeCep}/> : null }
         </div>
-        <div className='pageCep-color'>
-          <span className='yellow'></span>
-          <span className='orange'></span>
-          <span className='red'></span>
-          <span className='rose'></span>
-          <span className='purple'></span>
-          <span className='deep-purple'></span>
-          <span className='blue'></span>
-          <span className='cyan'></span>
-          <span className='light-green'></span>
-          <span className='green'></span>
-        </div>
+        <LuizaLabs />
       </div>
     );
   }

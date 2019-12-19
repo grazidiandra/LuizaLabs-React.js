@@ -1,0 +1,67 @@
+.pageCep-color{
+  background-color: red;
+  display: flex;
+  height: 9px;
+  position: relative;
+  width: 500px;
+}
+
+.yellow {
+  background-color: #FFCE00;
+  height: 9px;
+  width: 10%;
+}
+
+.orange {
+  background-color: #FB9600;
+  height: 9px;
+  width: 10%;
+}
+
+.red {
+  background-color: #E25335;
+  height: 9px;
+  width: 10%;
+}
+
+.rose {
+  background-color: #DE349E;
+  height: 9px;
+  width: 10%;
+}
+
+.purple {
+  background-color: #BF2FDC;
+  height: 9px;
+  width: 10%;
+}
+
+.deep-purple {
+  background-color: #5D33D5;
+  height: 9px;
+  width: 10%;
+}
+
+.blue {
+  background-color: #2B7CD7;
+  height: 9px;
+  width: 10%;
+}
+
+.cyan {
+  background-color: #33C3DD;
+  height: 9px;
+  width: 10%;
+}
+
+.light-green {
+  background-color: #32D9A1;
+  height: 9px;
+  width: 10%;
+}
+
+.green {
+  background-color: #3FCB2A;
+  height: 9px;
+  width: 10%;
+}

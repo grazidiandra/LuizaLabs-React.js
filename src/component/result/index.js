@@ -13,6 +13,7 @@ const Result = ({logradouro, bairro, cep, localidade, method}) => {
           <p>{bairro} </p>
           <p>{localidade}</p>
           <p>{cep}</p>
+          <iframe className='result-map' title='map' scrolling="no" width="400" height="200" src={`https://www.google.com.br/maps?q=${cep},%20Brasil&output=embed`} />
        </span>
      </div>
     );
