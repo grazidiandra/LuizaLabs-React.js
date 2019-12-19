@@ -1,5 +1,7 @@
 .pageCep-container {
   align-items: center;
+  background: linear-gradient(to top, rgb(0,114,175)
+  , #33C3DD);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -10,7 +12,6 @@
 .pageCep-container-searchCep {
   align-items: flex-start;
   background-color: #0072af;
-  border: 1px solid #0072af;
   display: flex;
   flex-direction: column;
   padding: 50px;
