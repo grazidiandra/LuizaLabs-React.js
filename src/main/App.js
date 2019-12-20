@@ -3,12 +3,6 @@ import React from 'react';
 import './style.css'
 import Cep from '../page';
 
-function App() {
-  return (
-    <div className="App">
-      <Cep />
-    </div>
-  );
-}
+const App = () =>  <Cep />
 
 export default App;

@@ -14,8 +14,8 @@ class Cep extends Component {
       error: ''
     }
     this.searchCep = this.searchCep.bind(this)
-    this.getCep = this.getCep.bind(this)
-    this.closeCep = this.closeCep.bind(this)
+    this.fetchCep = this.fetchCep.bind(this)
+    this.reset = this.reset.bind(this)
   }
 
   searchCep(e) {
@@ -26,7 +26,7 @@ class Cep extends Component {
       })
   }
 
-  getCep() {
+  fetchCep() {
     if(!this.state.cep) {
       this.setState({
         error: 'Preencha o campo de CEP '
@@ -48,7 +48,7 @@ class Cep extends Component {
     }
   }
 
-  closeCep() {
+  reset() {
     this.setState({
       address: null,
       cep: ''
@@ -61,8 +61,8 @@ class Cep extends Component {
         <div className='pageCep-container-searchCep'>
           <p className='pageCep-text'>CONSULTAR</p>
           <p className='pageCep-text-err'>{this.state.error}</p>
-          <Search placeholder='00000-000' value={this.state.cep} method={this.searchCep} onclick={this.getCep}/> 
-          {this.state.address ? <Result {...this.state.address} method={this.closeCep}/> : null }
+          <Search placeholder='00000-000' value={this.state.cep} method={this.searchCep} onclick={this.fetchCep}/> 
+          {this.state.address ? <Result {...this.state.address} method={this.reset}/> : null }
         </div>
         <LuizaLabs />
       </div>

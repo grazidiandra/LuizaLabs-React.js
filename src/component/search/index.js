@@ -7,7 +7,6 @@ const Search = ({ value, method, placeholder, onclick}) =>{
         <div className='search-container'>
           <p className='search-text'>CEP</p>
           <MaskedInput className='search-input' type="text" placeholder={placeholder} value={value} onChange={method} mask={[/\d/, /\d/, /\d/, /\d/, /\d/,'-', /\d/, /\d/, /\d/]}/>
-       
           <button className='search-btn' onClick={onclick}>Buscar</button>
         </div>
     );
