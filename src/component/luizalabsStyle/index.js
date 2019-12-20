@@ -1,7 +1,7 @@
 import React from 'react';
-import './style.css'
+import './style.css';
 
-const LuizaLabs = () =>{
+const LuizaLabs = () => {
   return (
     <div className='pageCep-color'>
       <span className='yellow'></span>
@@ -15,7 +15,7 @@ const LuizaLabs = () =>{
       <span className='light-green'></span>
       <span className='green'></span>
     </div>
-     
   );
 }
+
 export default LuizaLabs;

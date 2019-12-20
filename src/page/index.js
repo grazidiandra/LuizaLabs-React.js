@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Search from '../component/search';
 import apiAxios from '../service/api'
-import './style.css'
+import './style.css';
 import Result from '../component/result';
 import LuizaLabs from '../component/luizalabsStyle';
 
@@ -13,9 +13,10 @@ class Cep extends Component {
       address: null,
       error: ''
     }
-    this.searchCep = this.searchCep.bind(this)
-    this.fetchCep = this.fetchCep.bind(this)
-    this.reset = this.reset.bind(this)
+    
+    this.searchCep = this.searchCep.bind(this);
+    this.fetchCep = this.fetchCep.bind(this);
+    this.reset = this.reset.bind(this);
   }
 
   searchCep(e) {
@@ -23,23 +24,23 @@ class Cep extends Component {
       this.setState({
         cep: value,
         error: ''
-      })
+      });
   }
 
   fetchCep() {
-    if(!this.state.cep) {
+    if (!this.state.cep) {
       this.setState({
         error: 'Preencha o campo de CEP '
-      })
+      });
     } else {
       apiAxios.get(`${this.state.cep}/json/?callback=address`)
       .then(response => {
-        if(response.data.erro) {
+        if (response.data.erro) {
           this.setState({ 
-            error: 'CEP não encontrado' })
+            error: 'CEP não encontrado' });
         } else {
           this.setState({
-            address: response.data })
+            address: response.data });
         }
       })
       .catch(() => {
@@ -52,7 +53,7 @@ class Cep extends Component {
     this.setState({
       address: null,
       cep: ''
-    })
+    });
   }
 
   render() {

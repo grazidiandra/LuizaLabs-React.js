@@ -18,10 +18,9 @@ npm start # build-in the project Port:3000
 ## TECNOLOGIAS
 [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)  
 [React](https://reactjs.org/)  
-[Axios](https://github.com/axios/axios) 
+[Axios](https://github.com/axios/axios)
 [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)  
 [HTML](https://devdocs.io/html/) 
-
 
 # INTRODUCÃO AO TESTE
 ### TESTE FRONT-END 

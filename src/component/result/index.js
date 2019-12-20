@@ -1,8 +1,8 @@
 import React from 'react';
-import './style.css'
+import './style.css';
 
 
-const Result = ({logradouro, bairro, cep, localidade, method}) => { 
+const Result = ({ logradouro, bairro, cep, localidade, method }) => { 
     return (
      <div className='result-container'>
        <span className='result-span-btn'>
@@ -18,4 +18,5 @@ const Result = ({logradouro, bairro, cep, localidade, method}) => {
      </div>
     );
   }
+
 export default Result;
