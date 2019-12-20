@@ -1,5 +1,9 @@
 # Luizalabs | test front-end
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d18bdd44-3f9d-4104-83cf-84da88a6bbd2/deploy-status)](https://app.netlify.com/sites/luizalabs-frontend-graziellediandra/deploys)
+
+https://luizalabs-frontend-graziellediandra.netlify.com/
+
 ## INSTALACÃO
 
 1. Faça o download do repositório.
