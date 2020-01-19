@@ -1,4 +1,4 @@
-[[redirect]]
+[[redirects]]
 from = "https://luizalabs-frontend-graziellediandra.netlify.com/*"
 to = "https://viacep.com.br/ws/"
 status = 200
