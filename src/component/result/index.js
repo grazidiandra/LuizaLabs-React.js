@@ -17,6 +17,6 @@ const Result = ({ logradouro, bairro, cep, localidade, method }) => {
        </span>
      </div>
     );
-  }
+  };
 
 export default Result;
