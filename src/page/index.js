@@ -36,7 +36,7 @@ class Cep extends Component {
       });
     } else {
       axios({
-        url: `https://viacep.com.br/ws/${this.state.cep}/json/?callback=address`,
+        url: `https://viacep.com.br/ws/${this.state.cep}/json/`,
         adapter: jsonpAdapter,
         callbackParamName: 'address',
       })
