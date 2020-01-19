@@ -33,7 +33,7 @@ class Cep extends Component {
         error: 'Preencha o campo de CEP '
       });
     } else {
-      api.get(`/${this.state.cep}/json/`)
+      api.get(`${this.state.cep}/json/?callback=address`)
       .then(response => {
         if (response.data.erro) {
           this.setState({ 
