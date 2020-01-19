@@ -1,5 +1,0 @@
-[[redirects]]
-from="https://luizalabs-frontend-graziellediandra.netlify.com/ws/*"
-to="https://viacep.com.br/ws/"
-status=200
-force=true

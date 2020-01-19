@@ -4,6 +4,7 @@ import api from '../service/api'
 import './style.css';
 import Result from '../component/result';
 import LuizaLabs from '../component/luizalabsStyle';
+import jsonpAdapter from 'axios-jsonp';
 
 class Cep extends Component {
   constructor(props) {
@@ -33,7 +34,7 @@ class Cep extends Component {
         error: 'Preencha o campo de CEP '
       });
     } else {
-      api.get(`ws/${this.state.cep}/json/?callback=address`)
+      api.get(`${this.state.cep}/json/?callback=address`, { adapter: jsonpAdapter })
       .then(response => {
         if (response.data.erro) {
           this.setState({ 
